@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoTareas.Page1">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+
+  <StackLayout x:Name="layout" BackgroundColor="Teal">
+    <Grid>
+
+      <Grid.RowDefinitions>
+        
+        <RowDefinition>
+          <RowDefinition Height="*" />
+        </RowDefinition>
+        
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+
+      
+      <Label Text="Mis tareas" TextColor="White" FontAttributes="Bold"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="30" VerticalOptions="Start" HorizontalTextAlignment="Start"/>
+      <Label Text="Titulo" TextColor="White"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <Entry x:Name="titulo1" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Start"  />
+      <Label Text="Fecha" TextColor="White"  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <Label Text="Prioridad" TextColor="White"  Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <DatePicker x:Name="fecha1" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Teal"/>
+      <Picker x:Name="prioridad1" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"></Picker>
+      <Label Text="Responsable" TextColor="White"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <Label Text="Status" TextColor="White"  Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <Picker x:Name="responsable1" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"></Picker>
+      <Picker x:Name="status1" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"></Picker>
+      <Label Text="Descripcion" TextColor="White"  Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4" FontSize="18" VerticalOptions="End" HorizontalTextAlignment="Start"/>
+      <Entry x:Name="descripcion1" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4" VerticalOptions="Start" />
+      <Button x:Name="save" Text="Agregar Tarea"  FontSize="20"  TextColor="#ADAFB5" BackgroundColor="#262D3B" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" />
+
+    </Grid>
+  </StackLayout>
+  
+  
+</ContentPage>

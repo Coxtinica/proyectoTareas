@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectoTareas.Inicio">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+  
+    <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="Gray">
+    
+    <Button x:Name="Boton1" Text="Inicio de Sesion" Clicked="sesion" BackgroundColor="Teal" FontAttributes="Bold" FontSize="25" />
+    <Label Text="Bienvenidos" VerticalOptions="Center" HorizontalOptions="Center"  FontAttributes="Bold" FontSize="20"  />
+      
+  </StackLayout>
+
+</ContentPage>
